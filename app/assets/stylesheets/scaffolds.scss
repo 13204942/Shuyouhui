@@ -55,8 +55,9 @@ div {
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
-  display: table;
+  color: #a94442;
+  background-color: white;
+  display: form-control;
 }
 
 #error_explanation {
