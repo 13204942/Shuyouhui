@@ -1,28 +1,28 @@
 <div class="container">
-  <h1>Events</h1>
+  <h1>Current Events</h1>
 
-  <div class="panel-group">
-    <% @events.each do |event| %>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          Time: <%= event.time %>
-          <div class="pull-right">
-            Location: <%= event.location %>
+      <div class="panel-group">
+        <% @events.each do |event| %>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Time: <%= event.time %>
+              <div class="pull-right">
+                Location: <%= event.location %>
+              </div>
+            </div>
+
+            <div class="panel-body">
+              <h4><%= event.name %></h4>
+              <div class="pull-right">
+                <!-- Created by <%= event.owner %> -->
+                <%= link_to 'see more', event, class: "btn btn-link" %>
+              </div>
+            </div>
+
+            <!-- <div class="panel-footer"></div> -->
           </div>
-        </div>
-
-        <div class="panel-body">
-          <h4><%= event.name %></h4>
-          <div class="pull-right">
-            <!-- Created by <%= event.owner %> -->
-            <%= link_to 'More', event, class: "btn btn-link" %>
-          </div>
-        </div>
-
-        <!-- <div class="panel-footer"></div> -->
+        <% end %>
       </div>
-    <% end %>
-  </div>
 
 </div>
 
@@ -57,5 +57,3 @@
 !-->
 
 <br>
-
-<%= link_to 'New Event', new_event_path, class: "btn btn-link" %>

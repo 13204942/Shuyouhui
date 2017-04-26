@@ -1,2 +1,45 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.navbar-default {
+	background-color: #fff; 
+	border: 0;
+}
+
+.navbar-default .navbar-brand {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: 400;
+	color: #d5641c;
+	font-size: 36px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #484848;
+	font-size: 15px;
+}
+
+.navbar-default .navbar-header > a:hover {
+	color: #d5641c;
+}
+
+.panel-group {
+	width: 65%;
+}
+
+.panel-group .panel-heading {
+	background-color: #fff;
+}
+
+.form-group {
+	width: 55%;
+}
